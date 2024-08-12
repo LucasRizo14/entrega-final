@@ -1,0 +1,42 @@
+    .animacion{
+        
+        padding-left: 40px;
+       animation-name: efecto;
+       animation-iteration-count: infinite;
+       animation-duration: 8s;
+       animation-delay: 3s; 
+       
+   
+   
+   @keyframes efecto {
+   
+       0%{
+        transform: translate(-100px);
+       }
+       25%{
+        
+   
+       }
+       50%{
+           transform: translate(1000px);
+              
+   
+       }
+       75%{
+           
+       }
+       100%{
+        transform: translate(-100px);
+
+       }
+       
+       
+   }
+
+
+
+
+
+
+}
+

@@ -1,0 +1,334 @@
+/*CARACTERISTICAS DEL NAV*/
+/*Caracteristicas de img*/
+.bg-green {
+  height: 100px;
+  background-color: #d6deb9;
+}
+
+.navbar-brand img {
+  width: 150px;
+  height: 60px;
+}
+
+.navbar-nav {
+  color: black;
+  width: 100%;
+  height: 250px;
+  justify-content: end;
+  align-items: end;
+}
+.navbar-nav a {
+  display: flex;
+  background-color: #d6deb9;
+  width: 100px;
+  justify-content: center;
+  align-items: end;
+  color: black;
+  font-size: large;
+}
+
+/************************************************/
+/*CARACTERISTICAS DEL MAIN*/
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#principal {
+  padding-bottom: 20px;
+  background-color: #d6deb9;
+}
+#principal .descripcion {
+  padding: 10px;
+  background-image: url(../Img/descripcion.jpeg);
+  color: black;
+}
+#principal .destinos {
+  padding-top: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 10px;
+  grid-template-columns: 1fr;
+  column-gap: 5px;
+  /*POSICIONAMIENTO DE LAS IMAGENES*/
+}
+#principal .destinos .new-york {
+  display: none;
+}
+#principal .destinos .patagonia {
+  grid-row: 1/2;
+  grid-column: 1/4;
+}
+#principal .destinos .machu {
+  display: none;
+}
+#principal .destinos .londres {
+  grid-row: 2/3;
+  grid-column: 1/4;
+}
+#principal .destinos .paris {
+  display: none;
+}
+#principal .destinos .roma {
+  display: none;
+}
+#principal .destinos .china {
+  display: none;
+}
+#principal .destinos .japon {
+  display: none;
+}
+#principal .destinos .camboya {
+  grid-row: 3/4;
+  grid-column: 1/4;
+}
+
+/*MEDIA PARA TABLET*/
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    height: 175px;
+    background-color: #d6deb9;
+  }
+  header .navbar-nav {
+    width: 100%;
+  }
+  #principal .destinos {
+    grid-template-columns: 1fr 1fr;
+  }
+  #principal .destinos .new-york {
+    display: block;
+    grid-column: 1/2;
+  }
+  #principal .destinos .patagonia {
+    grid-column: 2/3;
+  }
+  #principal .destinos .china {
+    display: block;
+    grid-column: 1/2;
+  }
+  #principal .destinos .camboya {
+    grid-column: 2/3;
+  }
+}
+/*MEDIA PARA DESKTOP*/
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    height: 175px;
+    background-color: #d6deb9;
+  }
+  header .navbar-nav {
+    width: 100%;
+  }
+  header .navbar-brand img {
+    width: 150px;
+    height: 150px;
+    padding-top: 70px;
+  }
+  #principal .destinos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #principal .destinos .new-york {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #principal .destinos .machu {
+    display: block;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #principal .destinos .patagonia {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  #principal .destinos .londres {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #principal .destinos .roma {
+    display: block;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #principal .destinos .paris {
+    display: block;
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  #principal .destinos .china {
+    display: block;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #principal .destinos .camboya {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  #principal .destinos .japon {
+    display: block;
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .nosotros .equipo {
+    padding-top: 15px;
+  }
+  .nosotros .equipo img {
+    width: 40%;
+    height: 50%;
+  }
+}
+/***********************************/
+/************************************************/
+/*CARACTERISTICAS DEL FOOTER*/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  background-color: #d6deb9;
+  width: 100%;
+  height: 130px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+footer .seguinos {
+  display: flex;
+  color: black;
+  padding-right: 15px;
+  width: 100%;
+  justify-content: center;
+}
+footer .redes {
+  background-color: #d6deb9;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+}
+footer .derechos {
+  color: #d6deb9;
+  background-color: black;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-right: 10px;
+}
+
+/*********************************************************************************************************/
+/*caracteristicas contacto*/
+* form {
+  padding-bottom: 80px;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+.seguir {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*********************************************************************************************************/
+/*Caracteristicas Servicios*/
+.animacion {
+  padding-left: 40px;
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+@keyframes efecto {
+  0% {
+    transform: translate(-100px);
+  }
+  50% {
+    transform: translate(1000px);
+  }
+  100% {
+    transform: translate(-100px);
+  }
+}
+
+.servicios {
+  padding-bottom: 100px;
+}
+.servicios .animacion {
+  display: flex;
+  background-color: black;
+  color: #d6deb9;
+  justify-content: center;
+}
+.servicios .servi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1 fr;
+  padding-bottom: 110px;
+  padding-top: 20px;
+  column-gap: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.servicios .servi img {
+  width: 100%;
+  height: 100%;
+}
+.servicios .servi .cobertura {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.servicios .servi .alquiler {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+/**********************************************************************************************************/
+/*CARACTERISTICAS NOSOTROS*/
+.nosotros {
+  padding-top: 15px;
+}
+.nosotros img {
+  width: 50%;
+  height: 100%;
+}
+.nosotros .equipo {
+  display: flex;
+  padding-bottom: 50px;
+}
+.nosotros .equipo p {
+  padding: 10px;
+}
+
+/*ESTO ES EL FOOTER*/
+.nos {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/***********************************************************************************************************/
+/*CARACTERISTICAS VIAJES*/
+.viajes p {
+  padding: 5px;
+}
+.viajes img {
+  width: 40%;
+  height: 40%;
+  padding: 10px;
+}
+.viajes .viaje-uno {
+  display: flex;
+}
+.viajes .viaje-dos {
+  display: flex;
+}
+.viajes .viaje-tres {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

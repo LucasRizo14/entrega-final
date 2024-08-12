@@ -1,0 +1,445 @@
+/*CARACTERISTICAS DEL NAV*/
+@import "utilidades/variables";
+@import "utilidades/mixin";
+
+
+.bg-green {
+    height: 100px;
+    background-color: $color-principal;
+    
+}
+.navbar-brand img{
+
+    @include medidas (150px, 60px)
+       
+
+}
+
+.navbar-nav {
+    
+    color: black;
+    @include medidas(100%, 250px);
+    justify-content: end;
+    align-items: end;
+    
+    
+    
+    a{
+        display: flex;
+        background-color: $color-principal;
+        width: 100px;
+        justify-content: center;
+        align-items: end;
+        color: black;
+        font-size: large;
+       
+    }
+}
+
+/************************************************/
+/*CARACTERISTICAS DEL MAIN*/
+img{
+    @include medidas(100%, 100%)
+   
+}
+
+#principal{
+
+    padding-bottom: 20px;
+
+    background-color: $color-principal;
+
+    .descripcion {
+    
+        padding: 10px;
+        background-image: url(../Img/descripcion.jpeg);
+        color: black;
+    
+    }
+    .destinos{
+        padding-top: 10px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 10px;
+        grid-template-columns: 1fr;
+        column-gap: 5px;
+        
+        /*POSICIONAMIENTO DE LAS IMAGENES*/
+    
+        .new-york{
+            display: none;
+            
+         }
+         .patagonia{
+            grid-row: 1/2;
+            grid-column: 1/4;
+         }
+         .machu{
+            display: none;
+         }
+        
+         .londres{
+            grid-row: 2/3;
+            grid-column: 1/4;
+         }
+        
+         .paris{
+            display: none;
+        
+         }
+         .roma{
+            display: none;
+         }
+        
+        .china{
+            display: none;
+        
+        }
+        .japon {
+            display: none;
+        }
+        
+        .camboya{
+            grid-row: 3/4;
+            grid-column: 1/4;
+        }
+    
+     }
+}
+
+/*MEDIA PARA TABLET*/
+@media screen and (min-width: 768px){
+
+    header{
+      display: flex;
+      height: 175px;
+      background-color: $color-principal;
+
+      .navbar-nav{
+        width: 100%;
+     }
+      
+      
+    }
+
+    #principal{
+        .destinos{
+        
+            grid-template-columns: 1fr 1fr;
+
+            .new-york{
+                display: block;
+                grid-column: 1/2;
+            }
+            .patagonia{
+                grid-column: 2/3;
+            }
+            .china{
+                display: block;
+                grid-column: 1/2;
+            }
+            .camboya{
+                grid-column: 2/3;
+            }
+        }
+
+    }
+
+}
+/*MEDIA PARA DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+
+    header{
+        display: flex;
+      height: 175px;
+      background-color: $color-principal;
+
+      .navbar-nav{
+        width: 100%;
+
+ 
+      }
+
+      .navbar-brand img{
+
+        @include medidas(150px, 150px);
+    
+           padding-top: 70px;
+            
+        
+       }
+
+        
+        
+    
+      
+    }
+
+    #principal{
+
+        
+        .destinos{
+        
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .new-york{
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+            .machu{
+                display: block;
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+            .patagonia{
+                grid-column: 3/4;
+                grid-row: 1/2;
+            }
+        
+            .londres{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            .roma{
+                display: block;
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+            .paris{
+                display: block;
+                grid-column: 3/4;
+                grid-row: 2/3;
+            }
+            .china{
+                display: block;
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+            .camboya{
+                grid-column: 2/3;
+                grid-row: 3/4;
+        
+            }
+            .japon{
+                display: block;
+                grid-column: 3/4;
+                grid-row: 3/4;
+            }
+        }
+    }
+    
+    .nosotros{
+        
+        .equipo{
+
+            padding-top: 15px;
+        
+            img{
+                width: 40%;
+                height: 50%;
+            }
+           
+           
+               
+        }
+    }
+    
+    
+
+    
+
+}
+/***********************************/
+
+
+
+/************************************************/
+/*CARACTERISTICAS DEL FOOTER*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    background-color: $color-principal;
+    @include medidas(100%, 130px);
+    
+
+    a{
+        text-decoration: none;
+        color: black;
+        padding: 15px;
+    }
+
+    .seguinos{
+    
+        display: flex;
+       color: black;
+       padding-right: 15px;
+       width: 100%;
+       justify-content: center;
+
+    }
+
+    .redes{
+        background-color: $color-principal;
+        display: flex;
+        align-items: center;
+       @include medidas(100%,50px);
+       
+        justify-content: center;
+
+    }
+    .derechos{
+        color:$color-principal;
+        background-color: black;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-right: 10px;
+        
+    }
+}
+/*********************************************************************************************************/
+
+/*caracteristicas contacto*/ 
+
+    *form{
+        
+        padding-bottom: 80px;
+        padding-left: 50px;
+        padding-top: 30px;
+        
+    }
+        
+
+.seguir{
+
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    right: 0; 
+
+}
+  
+
+/*********************************************************************************************************/
+
+/*Caracteristicas Servicios*/
+@import "utilidades/animacion";
+
+.servicios{
+
+    padding-bottom: 100px;
+
+    .animacion{
+        display: flex;
+        background-color: black;
+        color: $color-principal;
+        justify-content: center;
+    }
+    
+
+    .servi{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1 fr;
+        padding-bottom: 110px;
+        padding-top: 20px;
+        column-gap: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        
+        
+
+        img {
+            @include medidas(100%,100%);
+            
+        }
+
+        .cobertura{
+
+            grid-column: 1/2;
+            grid-row: 1/2; 
+            
+         }
+
+         .alquiler{
+
+            grid-column: 2/3;
+            grid-row: 1/2;
+           
+        }
+     }
+    
+
+}
+/**********************************************************************************************************/
+
+/*CARACTERISTICAS NOSOTROS*/
+
+.nosotros{
+
+    padding-top: 15px;
+
+    img{
+        @include medidas(50%, 100%);
+       
+    }
+    .equipo{
+        display: flex;
+        padding-bottom: 50px;
+          
+
+        p{
+            padding: 10px;
+        }
+    }
+   
+       
+}
+/*ESTO ES EL FOOTER*/
+.nos{
+
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    right: 0; 
+}
+
+/***********************************************************************************************************/
+
+/*CARACTERISTICAS VIAJES*/
+
+.viajes{
+
+    p{
+        padding: 5px;
+    }
+
+    img{
+        @include medidas(40%,40%);
+        
+        padding: 10px;
+    }
+
+    .viaje-uno{
+        display: flex;
+    }
+    .viaje-dos{
+        display: flex;
+    }
+    
+    .viaje-tres{
+        display: flex;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
