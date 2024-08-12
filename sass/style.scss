@@ -336,7 +336,7 @@ footer{
         background-color: black;
         color: $color-principal;
         justify-content: center;
-        margin-bottom: 90px;
+        margin-bottom: 200px;
     }
     
 
@@ -372,6 +372,12 @@ footer{
         }
      }
 }
+.seg{
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    right: 0; 
+}
 
 
 /**********************************************************************************************************/
@@ -398,6 +404,7 @@ footer{
    
        
 }
+
 /*ESTO ES EL FOOTER*/
 .nos{
 

@@ -236,6 +236,7 @@ footer .derechos {
 /*********************************************************************************************************/
 /*Caracteristicas Servicios*/
 .animacion {
+  margin-bottom: 300px;
   padding-left: 40px;
   animation-name: efecto;
   animation-iteration-count: infinite;
@@ -244,13 +245,13 @@ footer .derechos {
 }
 @keyframes efecto {
   0% {
-    transform: translate(-100px);
+    transform: translate(-1000px);
   }
   50% {
     transform: translate(1000px);
   }
   100% {
-    transform: translate(-100px);
+    transform: translate(-1000px);
   }
 }
 
@@ -259,7 +260,7 @@ footer .derechos {
   background-color: black;
   color: #d6deb9;
   justify-content: center;
-  margin-bottom: 90px;
+  margin-bottom: 200px;
 }
 .servicios .servi {
   display: grid;
@@ -282,6 +283,13 @@ footer .derechos {
 .servicios .servi .alquiler {
   grid-column: 2/3;
   grid-row: 1/2;
+}
+
+.seg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 /**********************************************************************************************************/
