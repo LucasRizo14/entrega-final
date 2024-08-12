@@ -108,6 +108,7 @@ img{
 }
 
 /*MEDIA PARA TABLET*/
+
 @media screen and (min-width: 768px){
 
     header{
@@ -144,6 +145,20 @@ img{
         }
 
     }
+    /****ARREGLOS DE FOOTER *****************************************************************************************************/
+    
+   .servicios{
+
+    margin-bottom: 400px;
+   }
+   .nosotros{
+    margin-bottom:400px;
+   }
+   .formulario{
+
+    margin-bottom: 400px;
+   }
+
 
 }
 /*MEDIA PARA DESKTOP*/
@@ -303,7 +318,7 @@ footer{
 
 /*caracteristicas contacto*/ 
 
-    *form{
+    form{
         
         padding-bottom: 80px;
         padding-left: 50px;

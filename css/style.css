@@ -110,6 +110,16 @@ img {
   #principal .destinos .camboya {
     grid-column: 2/3;
   }
+  /****ARREGLOS DE FOOTER *****************************************************************************************************/
+  .servicios {
+    margin-bottom: 400px;
+  }
+  .nosotros {
+    margin-bottom: 400px;
+  }
+  .formulario {
+    margin-bottom: 400px;
+  }
 }
 /*MEDIA PARA DESKTOP*/
 @media screen and (min-width: 1024px) {
@@ -220,7 +230,7 @@ footer .derechos {
 
 /*********************************************************************************************************/
 /*caracteristicas contacto*/
-* form {
+form {
   padding-bottom: 80px;
   padding-left: 50px;
   padding-top: 30px;
