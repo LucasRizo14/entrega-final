@@ -1,5 +1,5 @@
     .animacion{
-        margin-bottom: 300px;
+        
         padding-left: 40px;
        animation-name: efecto;
        animation-iteration-count: infinite;
@@ -11,14 +11,14 @@
    @keyframes efecto {
    
        0%{
-        transform: translate(-1000px);
+        transform: translate(-50%);
        }
        25%{
         
    
        }
        50%{
-           transform: translate(1000px);
+           transform: translate(50%);
               
    
        }
@@ -26,7 +26,7 @@
            
        }
        100%{
-        transform: translate(-1000px);
+        transform: translate(-50%);
 
        }
        
