@@ -285,6 +285,12 @@ footer .derechos {
   grid-column: 2/3;
   grid-row: 1/2;
 }
+.servicios .seg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
 /**********************************************************************************************************/
 /*CARACTERISTICAS NOSOTROS*/
