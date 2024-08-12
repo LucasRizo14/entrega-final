@@ -329,13 +329,14 @@ footer{
 
 .servicios{
 
-    padding-bottom: 100px;
+    
 
     .animacion{
         display: flex;
         background-color: black;
         color: $color-principal;
         justify-content: center;
+        margin-bottom: 90px;
     }
     
 
@@ -370,18 +371,9 @@ footer{
            
         }
      }
-
-     .seg{
-        
-    position: fixed; 
-    bottom: 0; 
-    left: 0;
-    right: 0; 
-    
-     }
-    
-
 }
+
+
 /**********************************************************************************************************/
 
 /*CARACTERISTICAS NOSOTROS*/

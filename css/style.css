@@ -254,14 +254,12 @@ footer .derechos {
   }
 }
 
-.servicios {
-  padding-bottom: 100px;
-}
 .servicios .animacion {
   display: flex;
   background-color: black;
   color: #d6deb9;
   justify-content: center;
+  margin-bottom: 90px;
 }
 .servicios .servi {
   display: grid;
@@ -284,12 +282,6 @@ footer .derechos {
 .servicios .servi .alquiler {
   grid-column: 2/3;
   grid-row: 1/2;
-}
-.servicios .seg {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 /**********************************************************************************************************/
