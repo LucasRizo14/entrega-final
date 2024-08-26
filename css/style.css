@@ -247,11 +247,6 @@ img {
     width: 85%;
     height: 300px;
   }
-  .seguir {
-    position: none;
-    left: 0px;
-    bottom: 0px;
-  }
 }
 /*caracteristicas contacto*/
 form {
@@ -267,12 +262,6 @@ form {
   background-color: #d6deb9;
   padding-left: 50px;
   background-color: #d6deb9;
-}
-
-.seguir {
-  position: none;
-  left: 0px;
-  bottom: 0px;
 }
 
 /*********************************************************************************************************/
