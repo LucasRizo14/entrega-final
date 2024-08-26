@@ -247,9 +247,12 @@ img {
     width: 85%;
     height: 300px;
   }
+  .seguir {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+  }
 }
-/***********************************/
-/*********************************************************************************************************/
 /*caracteristicas contacto*/
 form {
   padding-bottom: 80px;
