@@ -269,6 +269,12 @@ form {
   background-color: #d6deb9;
 }
 
+.seguir {
+  position: none;
+  left: 0px;
+  bottom: 0px;
+}
+
 /*********************************************************************************************************/
 /*Caracteristicas Servicios*/
 .servicios .titu-servi {
