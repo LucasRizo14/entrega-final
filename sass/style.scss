@@ -1,7 +1,8 @@
 /*CARACTERISTICAS DEL NAV*/
 @import "utilidades/variables";
 @import "utilidades/mixin";
-
+@import "utilidades/footer";
+@import "utilidades/animacion";
 
 .bg-green {
     height: 100px;
@@ -15,15 +16,13 @@
 
 }
 
-.navbar-nav {
+.nav-cord {
     
     color: black;
     @include medidas(100%, 250px);
     justify-content: end;
     align-items: end;
-    
-    
-    
+
     a{
         display: flex;
         background-color: $color-principal;
@@ -38,6 +37,20 @@
 
 /************************************************/
 /*CARACTERISTICAS DEL MAIN*/
+
+.titu{
+    h1{
+        padding-top: 10px;
+        display: flex;
+        width: 100%;
+        font-size: larger;
+        justify-content: center;
+
+
+    }
+
+}
+
 img{
     @include medidas(100%, 100%)
    
@@ -144,11 +157,7 @@ img{
             }
         }
 
-    }
-    /****ARREGLOS DE FOOTER *****************************************************************************************************/
-    
-   
-
+    } 
 }
 /*MEDIA PARA DESKTOP*/
 
@@ -249,62 +258,21 @@ img{
         }
     }
     
-    
+  .nosotros{
 
-    
-
-}
-/***********************************/
-
-
-
-/************************************************/
-/*CARACTERISTICAS DEL FOOTER*/
-footer{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: end;
-    background-color: $color-principal;
-    @include medidas(100%, 130px);
-    
-
-    a{
-        text-decoration: none;
-        color: black;
-        padding: 15px;
-    }
-
-    .seguinos{
-    
-        display: flex;
-       color: black;
-       padding-right: 15px;
-       width: 100%;
-       justify-content: center;
-
-    }
-
-    .redes{
-        background-color: $color-principal;
-        display: flex;
-        align-items: center;
-       @include medidas(100%,50px);
+    .ubicacion{
        
-        justify-content: center;
-
-    }
-    .derechos{
-        color:$color-principal;
-        background-color: black;
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        padding-right: 10px;
+        iframe{
+            @include medidas(85%, 300px);
+           
+        }
         
     }
+    
+   } 
 }
+/***********************************/
 /*********************************************************************************************************/
-
 /*caracteristicas contacto*/ 
 
     form{
@@ -313,34 +281,44 @@ footer{
         padding-left: 50px;
         padding-top: 30px;
         
-    }
         
-
-.seguir{
-
-    position: fixed; 
-    bottom: 0; 
-    left: 0;
-    right: 0; 
-
-}
-  
+    }
+    .titu-cont{
+        padding-top: 10px;
+        
+        h1{
+            background-color: $color-principal;
+            padding-left: 50px;
+            
+            background-color: $color-principal
+        }
+    }
 
 /*********************************************************************************************************/
 
 /*Caracteristicas Servicios*/
-@import "utilidades/animacion";
+
+
+
 
 .servicios{
-
-    
+    .titu-servi{
+        padding-top: 10px;
+        h1{
+            padding-left: 40px;
+            display: flex;
+            justify-content: center;
+            background-color: $color-principal;
+        }
+    }
+     
 
     .animacion{
         display: flex;
         background-color: black;
         color: $color-principal;
         justify-content: center;
-        margin-bottom: 200px;
+        margin-bottom: 10px;
     }
     
 
@@ -375,13 +353,20 @@ footer{
            
         }
      }
+
+     .asistencia{
+        padding-left: 50px;
+        padding-top: 10px;
+     }
+
+     .alquiler{
+
+        padding-left: 50px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+     }
 }
-.seg{
-    position: fixed; 
-    bottom: 0; 
-    left: 0;
-    right: 0; 
-}
+
 
 
 /**********************************************************************************************************/
@@ -389,8 +374,13 @@ footer{
 /*CARACTERISTICAS NOSOTROS*/
 
 .nosotros{
+    padding-left: 10px;
 
     padding-top: 15px;
+
+    .titu-nos{
+        padding-bottom: 20px;
+    }
 
     img{
         @include medidas(50%, 100%);
@@ -399,23 +389,24 @@ footer{
     .equipo{
         display: flex;
         padding-bottom: 50px;
+        
           
 
         p{
             padding: 10px;
+            
         }
     }
-   
-       
 }
-
-/*ESTO ES EL FOOTER*/
-.nos{
-
-    position: fixed; 
-    bottom: 0; 
-    left: 0;
-    right: 0; 
+.ubicacion{
+    padding-bottom: 30px;
+    display: flex;
+    p{
+        padding-left: 10px
+    }
+    iframe{
+        @include medidas(50%, 50%);
+    }
 }
 
 /***********************************************************************************************************/
@@ -423,6 +414,10 @@ footer{
 /*CARACTERISTICAS VIAJES*/
 
 .viajes{
+
+    .titu-viajes{
+        padding-top: 20px;
+    }
 
     p{
         padding: 5px;
@@ -446,6 +441,7 @@ footer{
     }
     
 }
+
 
 
 

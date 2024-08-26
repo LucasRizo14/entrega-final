@@ -1,5 +1,63 @@
 /*CARACTERISTICAS DEL NAV*/
 /*Caracteristicas de img*/
+/************************************************/
+/*CARACTERISTICAS DEL FOOTER*/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  background-color: #d6deb9;
+  width: 100%;
+  height: 130px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+}
+footer .seguinos {
+  display: flex;
+  color: black;
+  padding-right: 15px;
+  width: 100%;
+  justify-content: center;
+}
+footer .redes {
+  background-color: #d6deb9;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+}
+footer .derechos {
+  color: #d6deb9;
+  background-color: black;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-right: 10px;
+}
+
+.animacion {
+  padding-left: 40px;
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+@keyframes efecto {
+  0% {
+    transform: translate(-50%);
+  }
+  50% {
+    transform: translate(50%);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+
 .bg-green {
   height: 100px;
   background-color: #d6deb9;
@@ -10,14 +68,14 @@
   height: 60px;
 }
 
-.navbar-nav {
+.nav-cord {
   color: black;
   width: 100%;
   height: 250px;
   justify-content: end;
   align-items: end;
 }
-.navbar-nav a {
+.nav-cord a {
   display: flex;
   background-color: #d6deb9;
   width: 100px;
@@ -29,6 +87,14 @@
 
 /************************************************/
 /*CARACTERISTICAS DEL MAIN*/
+.titu h1 {
+  padding-top: 10px;
+  display: flex;
+  width: 100%;
+  font-size: larger;
+  justify-content: center;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -110,7 +176,6 @@ img {
   #principal .destinos .camboya {
     grid-column: 2/3;
   }
-  /****ARREGLOS DE FOOTER *****************************************************************************************************/
 }
 /*MEDIA PARA DESKTOP*/
 @media screen and (min-width: 1024px) {
@@ -178,47 +243,12 @@ img {
     width: 40%;
     height: 50%;
   }
+  .nosotros .ubicacion iframe {
+    width: 85%;
+    height: 300px;
+  }
 }
 /***********************************/
-/************************************************/
-/*CARACTERISTICAS DEL FOOTER*/
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: end;
-  background-color: #d6deb9;
-  width: 100%;
-  height: 130px;
-}
-footer a {
-  text-decoration: none;
-  color: black;
-  padding: 15px;
-}
-footer .seguinos {
-  display: flex;
-  color: black;
-  padding-right: 15px;
-  width: 100%;
-  justify-content: center;
-}
-footer .redes {
-  background-color: #d6deb9;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  justify-content: center;
-}
-footer .derechos {
-  color: #d6deb9;
-  background-color: black;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  padding-right: 10px;
-}
-
 /*********************************************************************************************************/
 /*caracteristicas contacto*/
 form {
@@ -227,40 +257,32 @@ form {
   padding-top: 30px;
 }
 
-.seguir {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.titu-cont {
+  padding-top: 10px;
+}
+.titu-cont h1 {
+  background-color: #d6deb9;
+  padding-left: 50px;
+  background-color: #d6deb9;
 }
 
 /*********************************************************************************************************/
 /*Caracteristicas Servicios*/
-.animacion {
+.servicios .titu-servi {
+  padding-top: 10px;
+}
+.servicios .titu-servi h1 {
   padding-left: 40px;
-  animation-name: efecto;
-  animation-iteration-count: infinite;
-  animation-duration: 8s;
-  animation-delay: 3s;
+  display: flex;
+  justify-content: center;
+  background-color: #d6deb9;
 }
-@keyframes efecto {
-  0% {
-    transform: translate(-50%);
-  }
-  50% {
-    transform: translate(50%);
-  }
-  100% {
-    transform: translate(-50%);
-  }
-}
-
 .servicios .animacion {
   display: flex;
   background-color: black;
   color: #d6deb9;
   justify-content: center;
-  margin-bottom: 200px;
+  margin-bottom: 10px;
 }
 .servicios .servi {
   display: grid;
@@ -284,18 +306,24 @@ form {
   grid-column: 2/3;
   grid-row: 1/2;
 }
-
-.seg {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.servicios .asistencia {
+  padding-left: 50px;
+  padding-top: 10px;
+}
+.servicios .alquiler {
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 /**********************************************************************************************************/
 /*CARACTERISTICAS NOSOTROS*/
 .nosotros {
+  padding-left: 10px;
   padding-top: 15px;
+}
+.nosotros .titu-nos {
+  padding-bottom: 20px;
 }
 .nosotros img {
   width: 50%;
@@ -309,16 +337,23 @@ form {
   padding: 10px;
 }
 
-/*ESTO ES EL FOOTER*/
-.nos {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.ubicacion {
+  padding-bottom: 30px;
+  display: flex;
+}
+.ubicacion p {
+  padding-left: 10px;
+}
+.ubicacion iframe {
+  width: 50%;
+  height: 50%;
 }
 
 /***********************************************************************************************************/
 /*CARACTERISTICAS VIAJES*/
+.viajes .titu-viajes {
+  padding-top: 20px;
+}
 .viajes p {
   padding: 5px;
 }
