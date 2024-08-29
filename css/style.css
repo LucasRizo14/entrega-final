@@ -16,6 +16,7 @@ footer a {
   padding: 15px;
 }
 footer .seguinos {
+  padding-top: 10px;
   display: flex;
   color: black;
   padding-right: 15px;
