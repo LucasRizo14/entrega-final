@@ -500,6 +500,12 @@ img{
     
     .viaje-tres{
         display: flex;
+        img{
+            @include medidas(424%,360px);
+            
+            
+        }
+        
     }
     
 }

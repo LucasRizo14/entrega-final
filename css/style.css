@@ -415,5 +415,9 @@ form {
 .viajes .viaje-tres {
   display: flex;
 }
+.viajes .viaje-tres img {
+  width: 424%;
+  height: 360px;
+}
 
 /*# sourceMappingURL=style.css.map */
